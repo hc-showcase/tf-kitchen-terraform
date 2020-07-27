@@ -5,6 +5,9 @@
 *.tfstate
 *.tfstate.*
 
+# Kitchen-test
+*.kitchen/*
+
 # Crash log files
 crash.log
 
