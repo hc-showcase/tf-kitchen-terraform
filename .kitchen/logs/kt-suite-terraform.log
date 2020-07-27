@@ -1,0 +1,42 @@
+I, [2020-07-27T09:17:53.357973 #146587]  INFO -- kt-suite-terraform: -----> Destroying <kt-suite-terraform>...
+W, [2020-07-27T09:17:53.358225 #146587]  WARN -- kt-suite-terraform: Verifying the Terraform client version is in the supported interval of >= 0.11.4, < 0.13.0...
+W, [2020-07-27T09:17:53.358266 #146587]  WARN -- kt-suite-terraform: Reading the Terraform client version...
+I, [2020-07-27T09:17:53.380496 #146587]  INFO -- kt-suite-terraform: Terraform v0.12.29
+I, [2020-07-27T09:17:53.446717 #146587]  INFO -- kt-suite-terraform: + provider.null v2.1.2
+W, [2020-07-27T09:17:53.459703 #146587]  WARN -- kt-suite-terraform: Finished reading the Terraform client version.
+W, [2020-07-27T09:17:53.459914 #146587]  WARN -- kt-suite-terraform: Finished verifying the Terraform client version.
+W, [2020-07-27T09:17:53.459952 #146587]  WARN -- kt-suite-terraform: Initializing the Terraform working directory...
+I, [2020-07-27T09:17:53.487160 #146587]  INFO -- kt-suite-terraform: [0m[1mInitializing modules...[0m
+I, [2020-07-27T09:17:53.487811 #146587]  INFO -- kt-suite-terraform: 
+I, [2020-07-27T09:17:53.487854 #146587]  INFO -- kt-suite-terraform: [0m[1mInitializing the backend...[0m
+I, [2020-07-27T09:17:53.488758 #146587]  INFO -- kt-suite-terraform: 
+I, [2020-07-27T09:17:53.488795 #146587]  INFO -- kt-suite-terraform: [0m[1mInitializing provider plugins...[0m
+I, [2020-07-27T09:17:53.549101 #146587]  INFO -- kt-suite-terraform: 
+I, [2020-07-27T09:17:53.549206 #146587]  INFO -- kt-suite-terraform: The following providers do not have any version constraints in configuration,
+I, [2020-07-27T09:17:53.549282 #146587]  INFO -- kt-suite-terraform: so the latest version was installed.
+I, [2020-07-27T09:17:53.549312 #146587]  INFO -- kt-suite-terraform: 
+I, [2020-07-27T09:17:53.549422 #146587]  INFO -- kt-suite-terraform: To prevent automatic upgrades to new major versions that may contain breaking
+I, [2020-07-27T09:17:53.549640 #146587]  INFO -- kt-suite-terraform: changes, it is recommended to add version = "..." constraints to the
+I, [2020-07-27T09:17:53.549812 #146587]  INFO -- kt-suite-terraform: corresponding provider blocks in configuration, with the constraint strings
+I, [2020-07-27T09:17:53.549835 #146587]  INFO -- kt-suite-terraform: suggested below.
+I, [2020-07-27T09:17:53.549853 #146587]  INFO -- kt-suite-terraform: 
+I, [2020-07-27T09:17:53.549867 #146587]  INFO -- kt-suite-terraform: * provider.null: version = "~> 2.1"
+I, [2020-07-27T09:17:53.549881 #146587]  INFO -- kt-suite-terraform: 
+I, [2020-07-27T09:17:53.549896 #146587]  INFO -- kt-suite-terraform: [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
+W, [2020-07-27T09:17:53.561858 #146587]  WARN -- kt-suite-terraform: Finished initializing the Terraform working directory.
+W, [2020-07-27T09:17:53.561915 #146587]  WARN -- kt-suite-terraform: Selecting the kitchen-terraform-kt-suite-terraform Terraform workspace...
+W, [2020-07-27T09:17:53.600591 #146587]  WARN -- kt-suite-terraform: Finished selecting the kitchen-terraform-kt-suite-terraform Terraform workspace.
+W, [2020-07-27T09:17:53.600653 #146587]  WARN -- kt-suite-terraform: Destroying the Terraform-managed infrastructure...
+I, [2020-07-27T09:17:54.089595 #146587]  INFO -- kt-suite-terraform: [0m[1mmodule.kt_test.null_resource.create_file: Refreshing state... [id=641354690488183788][0m
+I, [2020-07-27T09:17:54.358922 #146587]  INFO -- kt-suite-terraform: [0m[1mmodule.kt_test.null_resource.create_file: Destroying... [id=641354690488183788][0m[0m
+I, [2020-07-27T09:17:54.359476 #146587]  INFO -- kt-suite-terraform: [0m[1mmodule.kt_test.null_resource.create_file: Destruction complete after 0s[0m[0m
+I, [2020-07-27T09:17:54.373871 #146587]  INFO -- kt-suite-terraform: [0m[1m[32m
+I, [2020-07-27T09:17:54.373946 #146587]  INFO -- kt-suite-terraform: Destroy complete! Resources: 1 destroyed.[0m
+W, [2020-07-27T09:17:54.388760 #146587]  WARN -- kt-suite-terraform: Finished destroying the Terraform-managed infrastructure.
+W, [2020-07-27T09:17:54.388812 #146587]  WARN -- kt-suite-terraform: Selecting the default Terraform workspace...
+I, [2020-07-27T09:17:54.416413 #146587]  INFO -- kt-suite-terraform: [0m[32mSwitched to workspace "default".[0m
+W, [2020-07-27T09:17:54.428472 #146587]  WARN -- kt-suite-terraform: Finished selecting the default Terraform workspace.
+W, [2020-07-27T09:17:54.428505 #146587]  WARN -- kt-suite-terraform: Deleting the kitchen-terraform-kt-suite-terraform Terraform workspace...
+I, [2020-07-27T09:17:54.455312 #146587]  INFO -- kt-suite-terraform: [0m[32mDeleted workspace "kitchen-terraform-kt-suite-terraform"![0m
+W, [2020-07-27T09:17:54.467569 #146587]  WARN -- kt-suite-terraform: Finished deleting the kitchen-terraform-kt-suite-terraform Terraform workspace.
+I, [2020-07-27T09:17:54.468201 #146587]  INFO -- kt-suite-terraform: Finished destroying <kt-suite-terraform> (0m1.11s).
