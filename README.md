@@ -6,7 +6,7 @@ Find more details here: https://newcontext-oss.github.io/kitchen-terraform/getti
 
 Here is a test run:
 
-´´´
+```
 mkaesz@arch ~/w/tf-testing (master)> bundle exec kitchen converge
 -----> Starting Test Kitchen (v2.5.3)
 -----> Creating <kt-suite-terraform>...
@@ -80,9 +80,9 @@ $$$$$$ Writing the input variables to the Kitchen instance state...
 $$$$$$ Finished writing the input variables to the Kitchen instance state.
        Finished converging <kt-suite-terraform> (0m1.25s).
 -----> Test Kitchen is finished. (0m2.54s)
-´´´
+```
 
-´´´
+```
 mkaesz@arch ~/w/tf-testing (master)> bundle exec kitchen verify
 -----> Starting Test Kitchen (v2.5.3)
 -----> Setting up <kt-suite-terraform>...
@@ -109,4 +109,4 @@ $$$$$$ Finished verifying the 'basic' system.
 $$$$$$ Finished verifying the systems.
        Finished verifying <kt-suite-terraform> (0m0.30s).
 -----> Test Kitchen is finished. (0m0.70s)
-´´´
+```
