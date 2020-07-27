@@ -110,3 +110,51 @@ $$$$$$ Finished verifying the systems.
        Finished verifying <kt-suite-terraform> (0m0.30s).
 -----> Test Kitchen is finished. (0m0.70s)
 ```
+
+```
+mkaesz@arch ~/w/tf-testing (master)> bundle exec kitchen destroy
+-----> Starting Test Kitchen (v2.5.3)
+-----> Destroying <kt-suite-terraform>...
+$$$$$$ Verifying the Terraform client version is in the supported interval of >= 0.11.4, < 0.13.0...
+$$$$$$ Reading the Terraform client version...
+       Terraform v0.12.29
+       + provider.null v2.1.2
+$$$$$$ Finished reading the Terraform client version.
+$$$$$$ Finished verifying the Terraform client version.
+$$$$$$ Initializing the Terraform working directory...
+       Initializing modules...
+
+       Initializing the backend...
+
+       Initializing provider plugins...
+
+       The following providers do not have any version constraints in configuration,
+       so the latest version was installed.
+
+       To prevent automatic upgrades to new major versions that may contain breaking
+       changes, it is recommended to add version = "..." constraints to the
+       corresponding provider blocks in configuration, with the constraint strings
+       suggested below.
+
+       * provider.null: version = "~> 2.1"
+
+       Terraform has been successfully initialized!
+$$$$$$ Finished initializing the Terraform working directory.
+$$$$$$ Selecting the kitchen-terraform-kt-suite-terraform Terraform workspace...
+$$$$$$ Finished selecting the kitchen-terraform-kt-suite-terraform Terraform workspace.
+$$$$$$ Destroying the Terraform-managed infrastructure...
+       module.kt_test.null_resource.create_file: Refreshing state... [id=3491937522851164236]
+       module.kt_test.null_resource.create_file: Destroying... [id=3491937522851164236]
+       module.kt_test.null_resource.create_file: Destruction complete after 0s
+
+       Destroy complete! Resources: 1 destroyed.
+$$$$$$ Finished destroying the Terraform-managed infrastructure.
+$$$$$$ Selecting the default Terraform workspace...
+       Switched to workspace "default".
+$$$$$$ Finished selecting the default Terraform workspace.
+$$$$$$ Deleting the kitchen-terraform-kt-suite-terraform Terraform workspace...
+       Deleted workspace "kitchen-terraform-kt-suite-terraform"!
+$$$$$$ Finished deleting the kitchen-terraform-kt-suite-terraform Terraform workspace.
+       Finished destroying <kt-suite-terraform> (0m1.12s).
+-----> Test Kitchen is finished. (0m1.54s)
+```
